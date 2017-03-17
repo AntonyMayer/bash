@@ -1,6 +1,6 @@
 #display git branch
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [ \1 ]/'
 }
 
 #change directory an display files/folders
@@ -29,4 +29,4 @@ mcd() {
     cd $1
 }
 
-export PS1="\u \[\033[32m\]\w \$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[1;33m\]\u \[\033[32m\]\w \[\033[31m\]\$(parse_git_branch)\[\033[00m\] $ "
