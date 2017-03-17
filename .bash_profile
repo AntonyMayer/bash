@@ -5,21 +5,22 @@ parse_git_branch() {
 
 #change directory and display files/folders
 cdl(){
-  to=$1
-  cd ${to}
-  ls
+    to=$1
+    cd ${to}
+    ls
 }
 
 #change directory and open in editor
 cdc(){
-  to=$1
-  cd ${to}
-  code .
+    to=$1
+    cd ${to}
+    code .
 }
 
-#cd => home
+#cd => home [path]
 cdh(){
-  cd ~/
+    to=$HOME/$1
+    cd ${to}
 }
 
 #set custom PS1
