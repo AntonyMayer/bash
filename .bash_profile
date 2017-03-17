@@ -23,5 +23,11 @@ cdh(){
     cd ${to}
 }
 
+#mkdir + cd 
+mcd() {
+    mkdir -p $1
+    cd $1
+}
+
 #set custom PS1
 export PS1="\u \[\033[32m\]\w \$(parse_git_branch)\[\033[00m\] $ "
