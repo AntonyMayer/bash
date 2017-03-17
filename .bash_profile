@@ -17,4 +17,10 @@ cdc(){
   code .
 }
 
-export PS1="\u@\h \[\033[32m\]\w - \$(parse_git_branch)\[\033[00m\] $ "
+#cd => home
+cdh(){
+  cd ~/
+}
+
+#set custom PS1
+export PS1="\u \[\033[32m\]\w \$(parse_git_branch)\[\033[00m\] $ "
