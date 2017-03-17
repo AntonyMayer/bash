@@ -18,4 +18,3 @@ cdc(){
 }
 
 export PS1="\u@\h \[\033[32m\]\w - \$(parse_git_branch)\[\033[00m\] $ "
-
