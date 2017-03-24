@@ -8,22 +8,20 @@ parse_git_branch() {
 
 #change directory an display files/folders
 cdl(){
-  to=$1
-  cd ${to}
+  cd $1
   ls
 }
 
 #change directory and open in editor
 cdc(){
-  to=$1
-  cd ${to}
+  cd $1
   code .
 }
 
 #cd => home [path]
 cdh(){
-    to=$HOME/$1
-    cd ${to}
+    to=$1
+    cd $HOME/$1
 }
 
 #cd => open in finder
