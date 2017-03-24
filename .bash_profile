@@ -26,6 +26,12 @@ cdh(){
     cd ${to}
 }
 
+#cd => open in finder
+cdo(){
+    cd $1
+    open .
+}
+
 #mkdir + cd
 mcd() {
     mkdir -p $1
