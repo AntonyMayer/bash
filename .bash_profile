@@ -57,4 +57,4 @@ function gi() {
     fi
 }
 
-export PS1="\[\033[1;33m\]\u \[\033[32m\]\w \[\033[31m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[1;33m\]\u \[\033[36m\]\w \[\033[31m\]\$(parse_git_branch)\[\033[00m\] $ "
