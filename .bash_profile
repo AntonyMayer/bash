@@ -36,6 +36,11 @@ mcd() {
     cd $1
 }
 
+#open chrome with cors disabled
+chrome() {
+    open -a Google\ Chrome --args --disable-web-security --user-data-dir
+}
+
 # Make .gitignore files (commonly used via `gi osx`)
 function gi() {
     result=$(curl "https://www.gitignore.io/api/$1" 2>/dev/null)
